@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Portafolio</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+</head>
+<body>
+    
+    <header class="l_header">
+        <!--nav bar-->
+        <nav>
+            <div>
+                 <a id="nav_name">Cesar Villamil Ruiz</a>
+            </div>
+
+            <div id="nav_options" class="nav_options section_all">
+                <ul>
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="nav_toggle">
+                <i class="fab fa-elementor"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="all_section home_section" id="home">
+            <div class="home_text">
+                <p>
+                    Hola, soy <strong class="hightlited_home">Cesar Villamil Ruiz</strong> 
+                </p>
+            </div>
+
+            <div class="home_contact">
+                <a href="#contact">Contacto</a>
+            </div>
+
+            <div class="home_main">
+                <div class="home_social">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+
+                <div class="img_home">
+                    <div class="img_container">
+                        <img class="profile_img" src="img/perfil_L.jpeg" alt="iegen de perfil">
+                    </div>                    
+                </div>
+            </div>                       
+        </section>
+
+        <section class="about_section all_section" id="about">
+            <div class="about_container"> 
+                <h2 class="all_title about_title">ABOUT</h2>
+                <div class="about_text">
+                    <p>Soy ingeniero de sistemas egresado de la Universidad Nacional Abierta y A Distancia UNAD,
+                        tengo experiencia en desarrollo de software web y de escritorio,
+                        las tecnologias que he manejado son c# con .Net, SQL server, javascript con jquery y ultimamente Typescript con
+                        Angular 10 y diseño responsive mobile first con HTML5 y CSS3.</p>
+                </div>
+                <div class="about_img">
+                    <img class="about_profile_img" src="img/Perfil_Cesar_Villamil.jpg" alt="iegen de perfil">
+                </div>                
+            </div>
+        </section>
+
+        <section class="skills_section all_section" id="skills">
+            <div class="skills_container">
+                <h2 class="all_title skills_title">SKILLS</h2>
+
+                <div class="skills_grid_container">
+                    <div class="skills_skill">
+                        <div class="skill_icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="skill_name">
+                            <p class="all_text">.NET</p>
+                        </div>
+                        <div class="skill_percentage">
+                            <p class="all_text">90%</p>
+                        </div>
+                        <div class="skill_bar" id="skills_bar_1"></div>
+                    </div>
+
+                    <div class="skills_skill">
+                        <div class="skill_icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill_name">
+                            <p class="all_text">SQL SERVER</p>
+                        </div>
+                        <div class="skill_percentage">
+                            <p class="all_text">80%</p>
+                        </div>
+                        <div class="skill_bar" id="skills_bar_2"></div>
+                    </div>
+
+                    <div class="skills_skill">
+                        <div class="skill_icon">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="skill_name">
+                            <p class="all_text">ANGULAR</p>
+                        </div>
+                        <div class="skill_percentage">
+                            <p class="all_text">60%</p>
+                        </div>
+                        <div class="skill_bar" id="skills_bar_3"></div>
+                    </div>
+
+                    <div class="skills_skill">
+                        <div class="skill_icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="skill_name">
+                            <p class="all_text">REACT JS</p>
+                        </div>
+                        <div class="skill_percentage">
+                            <p class="all_text">50%</p>
+                        </div>
+                        <div class="skill_bar" id="skills_bar_4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_section all_section" id="contact">
+            <h2 class="all_title">CONTACT</h2>
+            <div id="contact_form" class="contact_container">
+                <input type="text" id="contact_nombre" class="input_name form_contact_text" placeholder="Nombre">
+                <input type="text" id="contact_correo" class="email form_contact_text" placeholder="Correo">
+                <textarea name="" id="Contac_message" cols="30" rows="10" class="textarea_message form_contact_text" placeholder="Mensaje"></textarea>
+                
+                <p id="alert" hidden>Todos los campos son obligatorios</p>
+                <button id="contact_button">Enviar</button>
+            </div>            
+        </section>
+       
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer_name">
+            <strong> Cesar Villamil</strong>
+        </div>
+        <div>
+            <p class="footer-text">&#169; 2021 All rights reserved</p>
+        </div>
+        <div class="footer_social">
+            <div>
+                <i class="fab fa-github"></i>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+            </div>            
+        </div>
+    </footer>
+    
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--E-MAIL SEND-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--CUSTOM FUNCTIONS-->
+    <script src="js/index.js"></script>
+</body>
+</html>
